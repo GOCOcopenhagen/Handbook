@@ -18,7 +18,7 @@ Furthermore, we strongly advise you to read the Clean Code book. This philosophy
 ## Definitions
 - `task` a single capability in a software. Fx: *make a link to the Home page on the about page.*
 - `feature` a feature for the in a software, formed by a set of tasks. Fx: *adding multiple profile images*
-- `epic` a usecase of the software. Fx: *making a signup flow*
+- `epic` a use case of the software. Fx: *making a signup flow*
 
 
 ## Sprints 
@@ -53,10 +53,10 @@ Projects, developed by the team, should use the [Atomic design](https://bradfros
 
  
 ## Code Style
-Per default do not use eslint or equivilant. Hover some projects will use eslint locally or on 'Git-Commit-Time'.
+Per default do not use eslint or equivalent. Hover some projects will use eslint locally or on 'Git-Commit-Time'.
 
- - Do not outcomment code. Use the vcs! If you commit regualraly, you can always go back and find old code.
- - Try to make the code compact. Do not have lines with one symble. Fx:
+ - Do not outcomment code. Use the vcs! If you commit regularly, you can always go back and find old code.
+ - Try to make the code compact. Do not have lines with one character. Fx:
  
  ```html
 //Illegal 
@@ -76,16 +76,16 @@ Per default do not use eslint or equivilant. Hover some projects will use eslint
 
 
 ## Git
-By default you should as minimum have a production and a development environment and for most projects you will also need a staging enviroment. *Although, in early stages of a project a production environment might seem overkill. However the team should make the system environment compatible from the beginning.* 
+By default you should as minimum have a production and a development environment and for most projects you will also need a staging environment. *Although, in early stages of a project a production environment might seem overkill. However the team should make the system environment compatible from the beginning.* 
 
 You **MUST ALWAYS** commit your code after finishing a task. Before you commit it is important that you **test** the functionality of the part of the system you've worked with. (**TASKS**)
 
-You should create a brach for each feature. After you merge the barch into the development brach it is important that you **test the functionality on the development brach**. (**FEATURES**)
+You should create a branch for each feature. After you merge the branch into the development branch it is important that you **test the functionality on the development branch**. (**FEATURES**)
 
-When merging the development brach into the staging/production enviroment, you should always **test the whole system**. (**EPICS**)
+When merging the development branch into the staging/production environment, you should always **test the whole system**. (**EPICS**)
 
 ## Security 🛡
-Never ever enclude any .env files, api keys or equvilant
+Never ever include any .env files, api keys or equivalent.
 
 ## Technical setup
 
