@@ -3,12 +3,13 @@
 ## Prerequisite
 If you are reading this, you are probably familiar with some Object Oriented Programming. In order to participate in a team and have a sufficient development process, team-members should have a shared philosophy of how they develop software.
 
+
 For this handbook you will need to know the SOLID principles:
-Single-Responsibility
-Open/Close
-Liskov Substitution Principle
-Interface Segregation Principle
-Dependency Inversion Principle
+- `S`ingle-Responsibility
+- `O`pen/Close
+- `L`iskov Substitution Principle
+- `I`nterface Segregation Principle
+- `D`ependency Inversion Principle
 
 Find your own source and notes, which can explain these principles in whatever way suiting you.
 
@@ -25,7 +26,7 @@ Furthermore, we strongly advise you to read the Clean Code book. This philosophy
 
 
 ## Design
-Project should uses the [Atomic design](https://bradfrost.com/blog/post/atomic-web-design/).
+Projects, developed by the team, should use the [Atomic design](https://bradfrost.com/blog/post/atomic-web-design/).
 
 ### Components
  - All Components must be in a file that starts with a capital letter. (Fx: `BlueButton.tsx`)
@@ -35,6 +36,22 @@ Project should uses the [Atomic design](https://bradfrost.com/blog/post/atomic-w
 
  ### Pages
  - All pages should have a folder inside content that encapsulates page specific code.
+
+### Project structure
+
+```
+├── backend                 # Server/service related application
+... 
+├── client                  # Frontend related application
+│   ├── components          # Atomic design
+│   ├── globals             # Fx: colors.tsx, categories.json etc.
+│   ├── index               # A single entry file
+│   ├── models/types        # Model/types/codegen-files/data classes etc.
+│   ├── pages               # Navigable singe views which implements components (top levels) 
+│   ├── styles              # Getting started guide
+│   └── ...                 # package declaration and config/env files.
+└── readme.md
+```
 
  
 ## Code Style
