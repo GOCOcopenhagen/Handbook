@@ -10,20 +10,20 @@
 #### amplify cli `~4.27.2`
 
 
-# Design
+## Design
 Project should uses the [Atomic design](https://bradfrost.com/blog/post/atomic-web-design/).
 
-## Components
+### Components
  - All Components must be in a file that starts with a capital letter. (Fx: `BlueButton.tsx`)
  - `atoms` should be files that are purely styled components 
  - `molecules` are components that are small, but contain more than just styled components
  - `organisms` are more complex components that contain multiple molecules/atoms
 
- ## Pages
+ ### Pages
  - All pages should have a folder inside content that encapsulates page specific code.
 
  
-# Code Style
+## Code Style
 Per default do not use eslint or equivilant. Hover some projects will use eslint locally or on 'Git-Commit-Time'.
 
  - Do not outcomment code. Use the vcs! If you commit regualraly, you can always go back and find old code.
