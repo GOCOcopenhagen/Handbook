@@ -1,5 +1,19 @@
 # Handbook 📚
 
+## Prerequisite
+If you are reading this, you are probably familiar with some Object Oriented Programming. In order to participate in a team and have a sufficient development process, team-members should have a shared philosophy of how they develop software.
+
+For this handbook you will need to know the SOLID principles:
+Single-Responsibility
+Open/Close
+Liskov Substitution Principle
+Interface Segregation Principle
+Dependency Inversion Principle
+
+Find your own source and notes, which can explain these principles in whatever way suiting you.
+
+Furthermore, we strongly advise you to read the Clean Code book. This philosophy is industry standard and has been for many years, so acquiring this knowledge is a great investment. 
+
 
 ## Technical setup
 
