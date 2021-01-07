@@ -15,15 +15,13 @@ Find your own source and notes, which can explain these principles in whatever w
 
 Furthermore, we strongly advise you to read the Clean Code book. This philosophy is industry standard and has been for many years, so acquiring this knowledge is a great investment. 
 
+## Definitions
+- `task` a single capability in a software. Fx: *make a link to the Home page on the about page.*
+- `feature` a feature for the in a software, formed by a set of tasks. Fx: *adding multiple profile images*
+- `epic` a usecase of the software. Fx: *making a signup flow*
 
-## Technical setup
 
-#### Engine: `v12.16.*`
-#### React-version `=<16.8`
-#### AWS CLI `2`
-#### npm `6.14.*`
-#### amplify cli `~4.27.2`
-
+## Sprints 
 
 ## Design
 Projects, developed by the team, should use the [Atomic design](https://bradfrost.com/blog/post/atomic-web-design/).
@@ -76,5 +74,23 @@ Per default do not use eslint or equivilant. Hover some projects will use eslint
 
 ```
 
+
+## Git
+By default you should as minimum have a production and a development environment and for most projects you will also need a staging enviroment. *Although, in early stages of a project a production environment might seem overkill. However the team should make the system environment compatible from the beginning.* 
+
+You **MUST ALWAYS** commit your code after finishing a task. Before you commit it is important that you **test** the functionality of the part of the system you've worked with. (**TASKS**)
+
+You should create a brach for each feature. After you merge the barch into the development brach it is important that you **test the functionality on the development brach**. (**FEATURES**)
+
+When merging the development brach into the staging/production enviroment, you should always **test the whole system**. (**EPICS**)
+
 ## Security 🛡
 Never ever enclude any .env files, api keys or equvilant
+
+## Technical setup
+
+#### Engine: `v12.16.*`
+#### React-version `=<16.8`
+#### AWS CLI `2`
+#### npm `6.14.*`
+#### amplify cli `~4.27.2`
